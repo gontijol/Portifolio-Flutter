@@ -61,7 +61,7 @@ class ContactBox extends StatelessWidget {
               SocalCard(
                 color: Colors.tealAccent[100],
                 iconSrc: "assets/images/skype.png",
-                name: 'LinedIn',
+                name: 'LinkedIn',
                 press: () async {
                   {
                     const url = 'https://br.linkedin.com/in/luigigontijo';
