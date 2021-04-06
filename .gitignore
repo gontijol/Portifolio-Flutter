@@ -7,7 +7,7 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 #.dart_tool
-.dart_tool
+.dart_tool/
 # Firebase cache
 .firebase/
 
