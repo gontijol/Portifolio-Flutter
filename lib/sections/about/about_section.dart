@@ -41,7 +41,19 @@ class AboutSection extends StatelessWidget {
               MyOutlineButton(
                 imageSrc: "assets/images/hand.png",
                 text: "Me Contrate!",
-                press: () {},
+                press: () async {
+                  final Uri params = Uri(
+                    scheme: 'mailto',
+                    path: 'gontijol@live.com',
+                    query: 'Contato Email',
+                  );
+                  String url = params.toString();
+                  if (await canLaunch(url)) {
+                    await launch(url);
+                  } else {
+                    print('Could not launch $url');
+                  }
+                },
               ),
               SizedBox(width: kDefaultPadding * 1.5),
               DefaultButton(

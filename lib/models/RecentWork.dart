@@ -1,11 +1,11 @@
 class RecentWork {
   final String image, category, title;
   final int id;
-
   RecentWork({this.id, this.image, this.category, this.title});
 }
 
 // Demo List of my works
+
 List<RecentWork> recentWorks = [
   RecentWork(
     id: 1,

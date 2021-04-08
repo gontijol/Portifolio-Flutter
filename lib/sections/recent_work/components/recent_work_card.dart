@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_app/models/RecentWork.dart';
+import 'package:url_launcher/url_launcher.dart';
+import '../../../components/my_outline_button.dart';
 
 import '../../../constants.dart';
 
@@ -58,10 +60,20 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
                           .copyWith(height: 1.5),
                     ),
                     SizedBox(height: kDefaultPadding),
-                    Text(
-                      "Link do Projeto no Github",
-                      style: TextStyle(decoration: TextDecoration.underline),
-                    )
+                    MyOutlineButton(
+                      imageSrc: "assets/images/github.png",
+                      text: "Github!",
+                      press: () async {
+                        {
+                          const url = 'https://github.com/gontijol';
+                          if (await canLaunch(url)) {
+                            await launch(url);
+                          } else {
+                            throw 'Could not launch $url';
+                          }
+                        }
+                      },
+                    ),
                   ],
                 ),
               ),

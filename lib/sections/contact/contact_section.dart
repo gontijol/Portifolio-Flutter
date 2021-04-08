@@ -60,7 +60,7 @@ class ContactBox extends StatelessWidget {
             children: [
               SocalCard(
                 color: Colors.tealAccent[100],
-                iconSrc: "assets/images/skype.png",
+                iconSrc: "assets/images/linkedin.png",
                 name: 'LinkedIn',
                 press: () async {
                   {
@@ -75,8 +75,8 @@ class ContactBox extends StatelessWidget {
               ),
               SocalCard(
                 color: Colors.tealAccent[400],
-                iconSrc: "assets/images/whatsapp.png",
                 name: 'Whatsapp',
+                iconSrc: "assets/images/whatsapp.png",
                 press: () async {
                   {
                     const url =
