@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+* linguist-vendored
+* text = auto
+*.javascript linguist-detectable=false
+*.flutter linguist-detectable=true
