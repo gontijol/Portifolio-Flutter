@@ -1,3 +1,2 @@
 * linguist-vendored
-*.javascript linguist-detectable=false
-*.flutter linguist-detectable=true
+ *.* linguist-language=Dart
