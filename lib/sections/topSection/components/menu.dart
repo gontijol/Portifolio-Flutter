@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../../constants.dart';
+import 'package:web_app/constants.dart';
+import 'package:web_app/sections/about/about_section.dart';
+import 'package:web_app/sections/contact/contact_section.dart';
+import 'package:web_app/sections/feedback/feedback_section.dart';
+import 'package:web_app/sections/recent_work/recent_work_section.dart';
+import 'package:web_app/sections/service/service_section.dart';
+import 'package:web_app/sections/topSection/top_section.dart';
 
 final controller = ScrollController();
 
@@ -27,8 +34,8 @@ class _MenuState extends State<Menu> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(10),
-          topRight: Radius.circular(10),
+          topLeft: Radius.circular(50),
+          topRight: Radius.circular(50),
         ),
         boxShadow: [kDefaultShadow],
       ),
@@ -47,31 +54,26 @@ class _MenuState extends State<Menu> {
           setState(() {
             selectedIndex = index;
             if (selectedIndex == 0) {
-              print('Inicio');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => FirstRoute()),
               );
             } else if (selectedIndex == 1) {
-              print('Sobre');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SecondRoute()),
               );
             } else if (selectedIndex == 2) {
-              print('Serviços');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ThirdRoute()),
               );
             } else if (selectedIndex == 3) {
-              print('Portifolio');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => FourthRoute()),
               );
             } else if (selectedIndex == 4) {
-              print('Contato');
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => FivethRoute()),
@@ -121,23 +123,22 @@ class FirstRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          title: Text("Inicio"), backgroundColor: Colors.tealAccent[700]),
-      body: Center(
-        child: ElevatedButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.resolveWith<Color>(
-              (Set<MaterialState> states) {
-                if (states.contains(MaterialState.pressed))
-                  return Colors.tealAccent[700];
-                return null; // Use the component's default.
-              },
-            ),
-          ),
-          child: Text('Clique aqui para voltar!'),
-          onPressed: () {
-            Navigator.pop(context);
-          },
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            TopSection(),
+            SizedBox(height: kDefaultPadding * 2),
+            AboutSection(),
+            ServiceSection(),
+            RecentWorkSection(),
+            FeedbackSection(),
+            SizedBox(height: kDefaultPadding),
+            ContactSection(),
+            // This SizeBox just for demo
+            // SizedBox(
+            //   height: 500,
+            // )
+          ],
         ),
       ),
     );
@@ -148,15 +149,37 @@ class SecondRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Sobre"),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Clique aqui para voltar!'),
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: kDefaultPadding * 2),
+              Container(
+                margin: EdgeInsets.only(top: kDefaultPadding),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.tealAccent[700], // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text(
+                    'Clique aqui para voltar!',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+              ),
+              AboutSection(),
+              SizedBox(height: kDefaultPadding),
+              // This SizeBox just for demo
+              // SizedBox(
+              //   height: 500,
+              // )
+            ],
+          ),
         ),
       ),
     );
@@ -167,15 +190,34 @@ class ThirdRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Serviços"),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Clique aqui para voltar!'),
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: kDefaultPadding * 2),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.tealAccent[700], // background
+                  onPrimary: Colors.white, // foreground
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'Clique aqui para voltar!',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              ServiceSection(),
+              SizedBox(height: kDefaultPadding),
+              // This SizeBox just for demo
+              // SizedBox(
+              //   height: 500,
+              // )
+            ],
+          ),
         ),
       ),
     );
@@ -186,15 +228,35 @@ class FourthRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Portifolio"),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Clique aqui para voltar!'),
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.all(0.0),
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(height: kDefaultPadding * 2),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.tealAccent[700], // background
+                  onPrimary: Colors.white, // foreground
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text(
+                  'Clique aqui para voltar!',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              RecentWorkSection(),
+              SizedBox(height: kDefaultPadding),
+              // This SizeBox just for demo
+              // SizedBox(
+              //   height: 500,
+              // )
+            ],
+          ),
         ),
       ),
     );
@@ -205,23 +267,37 @@ class FivethRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Contato"),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.resolveWith<Color>(
-              (Set<MaterialState> states) {
-                if (states.contains(MaterialState.pressed)) return Colors.green;
-                return null; // Use the component's default.
-              },
-            ),
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(2.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.tealAccent[700], // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text(
+                    'Clique aqui para voltar!',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ),
+              ),
+              SizedBox(height: kDefaultPadding * 2),
+              ContactSection(),
+              SizedBox(height: kDefaultPadding),
+              // This SizeBox just for demo
+              // SizedBox(
+              //   height: 500,
+              // )
+            ],
           ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Clique aqui para voltar!'),
         ),
       ),
     );
