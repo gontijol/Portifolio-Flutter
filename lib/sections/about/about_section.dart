@@ -22,7 +22,7 @@ class AboutSection extends StatelessWidget {
               Expanded(
                 child: AboutSectionText(
                   text:
-                      "Luigi Gontijo, ex-estudante em Engenharia Elétrica atualmente cursando Ciências da Computação na UFG, experiência com estúdio de gravação para cursos ead e manutenção geral de equipamentos eletrônicos na Rede Juris. Amante da tecnologia buscando um espaço para aprender e desenvolver meus conhecimentos.\n\nAtualmente sou gerente de Esports da UFG Eagles.",
+                      "Luigi Gontijo, ex-estudante em Engenharia Elétrica atualmente cursando Ciências da Computação na UFG, experiência com estúdio de gravação para cursos EAD e manutenção geral de equipamentos eletrônicos na Rede Juris. Amante da tecnologia buscando um espaço para aprender e desenvolver meus conhecimentos.\n\nAtualmente sou Gerente de Esports da UFG Eagles.",
                 ),
               ),
               ExperienceCard(numOfExp: "02"),

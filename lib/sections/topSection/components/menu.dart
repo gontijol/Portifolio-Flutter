@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../../constants.dart';
+
+final controller = ScrollController();
 
 class Menu extends StatefulWidget {
   @override
@@ -45,6 +46,37 @@ class _MenuState extends State<Menu> {
         onTap: () {
           setState(() {
             selectedIndex = index;
+            if (selectedIndex == 0) {
+              print('Inicio');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FirstRoute()),
+              );
+            } else if (selectedIndex == 1) {
+              print('Sobre');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SecondRoute()),
+              );
+            } else if (selectedIndex == 2) {
+              print('Serviços');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ThirdRoute()),
+              );
+            } else if (selectedIndex == 3) {
+              print('Portifolio');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FourthRoute()),
+              );
+            } else if (selectedIndex == 4) {
+              print('Contato');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => FivethRoute()),
+              );
+            }
           });
         },
         onHover: (value) {
@@ -83,4 +115,115 @@ class _MenuState extends State<Menu> {
           ),
         ),
       );
+}
+
+class FirstRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: Text("Inicio"), backgroundColor: Colors.tealAccent[700]),
+      body: Center(
+        child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.resolveWith<Color>(
+              (Set<MaterialState> states) {
+                if (states.contains(MaterialState.pressed))
+                  return Colors.tealAccent[700];
+                return null; // Use the component's default.
+              },
+            ),
+          ),
+          child: Text('Clique aqui para voltar!'),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class SecondRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Sobre"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Clique aqui para voltar!'),
+        ),
+      ),
+    );
+  }
+}
+
+class ThirdRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Serviços"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Clique aqui para voltar!'),
+        ),
+      ),
+    );
+  }
+}
+
+class FourthRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Portifolio"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Clique aqui para voltar!'),
+        ),
+      ),
+    );
+  }
+}
+
+class FivethRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Contato"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.resolveWith<Color>(
+              (Set<MaterialState> states) {
+                if (states.contains(MaterialState.pressed)) return Colors.green;
+                return null; // Use the component's default.
+              },
+            ),
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Clique aqui para voltar!'),
+        ),
+      ),
+    );
+  }
 }

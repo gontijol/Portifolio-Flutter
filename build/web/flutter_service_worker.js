@@ -3,18 +3,20 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "c18a73c2e3d7e76cb40da3d9126777aa",
+  "assets/AssetManifest.json": "101f3b0879ce9522dfb3989d472eb82a",
 "assets/assets/images/background.png": "b5f286b1db406a54824d83f730dba454",
 "assets/assets/images/bg_img_2.png": "574548aa62dbaf8578554de63d86c3e0",
 "assets/assets/images/contact_icon.png": "856b95eb03d60fa2576140e4c3d034b9",
 "assets/assets/images/desktop.png": "d4794e3ddcb4fce9a2c12246e3b4d8a7",
 "assets/assets/images/download.png": "d9317d736e7b69f20f57f6ab13f34d3c",
 "assets/assets/images/email.png": "f59e8ec158ec05d21c8b251d7b0017ca",
+"assets/assets/images/email1.png": "0e7229065e14f70ea8b797801f2c5e40",
 "assets/assets/images/github.png": "02f9a34962534653f4d57091dcb74b4d",
 "assets/assets/images/graphic.png": "d7aaa5a5615483382572b5d5c24c5e5b",
 "assets/assets/images/hand.png": "d7c6f40ec1244a86fb4610cd515fee55",
 "assets/assets/images/Hover.png": "2d1d4e8c6c69da6b975746e25cd6fb7f",
 "assets/assets/images/Hover_flip.png": "091c871388828549b62fe150f3837a05",
+"assets/assets/images/image.png": "910515884fbe1c7b415b35664c174f0b",
 "assets/assets/images/Intreaction_design.png": "98e873648b7c2d3062556f2f8c09d4c3",
 "assets/assets/images/linkedin.png": "bbded08725375d92e9ec5adea84fe432",
 "assets/assets/images/Logo.png": "d61946b418b21be1255073ad946716a7",
@@ -36,9 +38,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "cbe0ca8fd79752d19a6b63a41e4058b2",
-"/": "cbe0ca8fd79752d19a6b63a41e4058b2",
-"main.dart.js": "deaf5da5d48969d5c5b9186f324ca625",
+"index.html": "1702aaa0102f524ed03de564b7e7412e",
+"/": "1702aaa0102f524ed03de564b7e7412e",
+"main.dart.js": "0cfbbff8a2ae3974708c3e5389f6a82f",
 "manifest.json": "36e6ef6d854a977f9c9d55845e8ac6d9",
 "version.json": "3daa223e44daa89a1858e16114a8f6d3"
 };

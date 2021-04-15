@@ -156,8 +156,8 @@ class ContactForm extends StatelessWidget {
           Center(
             child: FittedBox(
               child: DefaultButton(
-                imageSrc: "assets/images/contact_icon.png",
-                text: "Contact Me!",
+                imageSrc: "assets/images/email1.png",
+                text: "Enviar Email",
                 press: () async {
                   final Uri params = Uri(
                     scheme: 'mailto',

@@ -1,0 +1,23 @@
+;Auto-generated Diamond Directive File. Can be deleted without harm.
+.Set CabinetNameTemplate=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\build\windows\runner\Release\~luigi_gontijo.CAB
+.Set CompressionType=LZX
+.Set CompressionLevel=7
+.Set InfFileName=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\build\windows\runner\Release\~luigi_gontijo_LAYOUT.INF
+.Set RptFileName=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\build\windows\runner\Release\~luigi_gontijo.RPT
+.Set MaxDiskSize=CDROM
+.Set ReservePerCabinetSize=0
+.Set InfCabinetLineFormat=*cab#*=Application Source Media,*cabfile*,0
+.Set Compress=on
+.Set CompressionMemory=21
+.Set DiskDirectoryTemplate=
+.Set Cabinet=ON
+.Set MaxCabinetSize=999999999
+.Set InfDiskHeader=
+.Set InfDiskLineFormat=
+.Set InfCabinetHeader=[SourceDisksNames]
+.Set InfFileHeader=
+.Set InfFileHeader1=[SourceDisksFiles]
+.Set InfFileLineFormat=*file*=*cab#*,,*size*,*csum*
+C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\build\windows\runner\Release\flutter_windows.dll
+C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\build\windows\runner\Release\luigi_gontijo.exe
+C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\build\windows\runner\Release\url_launcher_windows_plugin.dll

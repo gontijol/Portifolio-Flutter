@@ -1,0 +1,28 @@
+^C:\USERS\GONTI\DESKTOP\FLUTTER_PROJETOS\LUIGI_GONTIJO\BUILD\WINDOWS\CMAKEFILES\CD4A7CC2D8A595467740A8498D84A222\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Dev\flutter PROJECT_DIR=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo FLUTTER_ROOT=C:\Dev\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\windows\flutter\ephemeral PROJECT_DIR=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo FLUTTER_TARGET=lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=true PACKAGE_CONFIG=C:\Users\Gonti\Desktop\Flutter_Projetos\luigi_gontijo\.dart_tool\package_config.json C:/Dev/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GONTI\DESKTOP\FLUTTER_PROJETOS\LUIGI_GONTIJO\BUILD\WINDOWS\CMAKEFILES\F3C5409B3DDBAB759C6C672686CA1776\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\GONTI\DESKTOP\FLUTTER_PROJETOS\LUIGI_GONTIJO\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Gonti/Desktop/Flutter_Projetos/luigi_gontijo/windows -BC:/Users/Gonti/Desktop/Flutter_Projetos/luigi_gontijo/build/windows --check-stamp-file C:/Users/Gonti/Desktop/Flutter_Projetos/luigi_gontijo/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
