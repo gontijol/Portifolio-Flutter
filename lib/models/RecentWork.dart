@@ -5,7 +5,6 @@ class RecentWork {
 }
 
 // Demo List of my works
-
 List<RecentWork> recentWorks = [
   RecentWork(
     id: 1,

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
-
 class AboutTextWithSign extends StatelessWidget {
   const AboutTextWithSign({
     Key key,
@@ -13,14 +11,24 @@ class AboutTextWithSign extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Minha \nHistória",
-          style: Theme.of(context)
-              .textTheme
-              .headline2
-              .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
+          "Minha\n História",
+          style: TextStyle(
+            shadows: [
+              Shadow(
+                blurRadius: 4.0,
+                color: Colors.tealAccent[700],
+                offset: Offset(1.0, 2.0),
+              ),
+              Shadow(
+                blurRadius: 1.0,
+                color: Colors.teal,
+                offset: Offset(1.0, 2.0),
+              ),
+            ],
+            fontSize: 40,
+            color: Colors.black,
+          ),
         ),
-        SizedBox(height: kDefaultPadding * 2),
-        Image.asset("assets/images/sign.png")
       ],
     );
   }
