@@ -11,6 +11,9 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 
+#windows directory
+windows/
+build/windows
 # Firebase config
 
 # Uncomment this if you'd like others to create their own Firebase project.
