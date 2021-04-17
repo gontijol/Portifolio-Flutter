@@ -14,6 +14,13 @@ firebase-debug.*.log*
 #windows directory
 windows/
 build/windows
+build/082f6d3293e05885095f7703bb6393cf
+build/d6bdcc2eff2a6af0092be06be9dc6d29
+build/flutter_assets
+build/.last_build_id
+build/c075001b96339384a97db4862b8ab8db.cache.dill.track.dill
+build/cache.dill.track.dill
+
 # Firebase config
 
 # Uncomment this if you'd like others to create their own Firebase project.
