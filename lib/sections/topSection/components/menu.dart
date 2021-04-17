@@ -158,7 +158,7 @@ class SecondRoute extends StatelessWidget {
               SizedBox(height: kDefaultPadding * 2),
               Container(
                 margin: EdgeInsets.only(top: kDefaultPadding),
-                child: ElevatedButton(
+                child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.tealAccent[700], // background
                     onPrimary: Colors.white, // foreground
@@ -166,7 +166,8 @@ class SecondRoute extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  icon: Icon(Icons.reply_sharp),
+                  label: Text(
                     'Clique aqui para voltar!',
                     style: TextStyle(color: Colors.black),
                   ),
@@ -197,7 +198,7 @@ class ThirdRoute extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: kDefaultPadding * 2),
-              ElevatedButton(
+              ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
                   primary: Colors.tealAccent[700], // background
                   onPrimary: Colors.white, // foreground
@@ -205,7 +206,8 @@ class ThirdRoute extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text(
+                icon: Icon(Icons.reply_sharp),
+                label: Text(
                   'Clique aqui para voltar!',
                   style: TextStyle(color: Colors.black),
                 ),
@@ -236,7 +238,7 @@ class FourthRoute extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: kDefaultPadding * 2),
-              ElevatedButton(
+              ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
                   primary: Colors.tealAccent[700], // background
                   onPrimary: Colors.white, // foreground
@@ -244,7 +246,8 @@ class FourthRoute extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                child: Text(
+                icon: Icon(Icons.reply_sharp),
+                label: Text(
                   'Clique aqui para voltar!',
                   style: TextStyle(color: Colors.black),
                 ),
@@ -273,9 +276,10 @@ class FivethRoute extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(height: kDefaultPadding * 2),
               Container(
-                padding: const EdgeInsets.all(2.0),
-                child: ElevatedButton(
+                padding: const EdgeInsets.all(1.0),
+                child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.tealAccent[700], // background
                     onPrimary: Colors.white, // foreground
@@ -283,7 +287,8 @@ class FivethRoute extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  icon: Icon(Icons.reply_sharp),
+                  label: Text(
                     'Clique aqui para voltar!',
                     style: TextStyle(color: Colors.black),
                   ),

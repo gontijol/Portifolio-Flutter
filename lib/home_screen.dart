@@ -6,6 +6,7 @@ import 'package:web_app/sections/feedback/feedback_section.dart';
 import 'package:web_app/sections/recent_work/recent_work_section.dart';
 import 'package:web_app/sections/service/service_section.dart';
 import 'package:web_app/sections/topSection/top_section.dart';
+import './sections/bottomSection/bottom_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -24,6 +25,7 @@ class HomeScreen extends StatelessWidget {
               FeedbackSection(),
               SizedBox(height: kDefaultPadding),
               ContactSection(),
+              BottomBar(),
               // This SizeBox just for demo
               // SizedBox(
               //   height: 500,
