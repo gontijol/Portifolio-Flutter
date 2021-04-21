@@ -6,6 +6,6 @@ A new Flutter project.
 
 Meu portifolio criado com a utilização de AngularDart e Flutter.
 
-### Ainda não respoonsivo
+## Ainda não respoonsivo
 
 Site não comporta bem na versão mobile, estou trabalhando para corrigir esse problema.
